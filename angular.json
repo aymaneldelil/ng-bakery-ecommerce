@@ -100,6 +100,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "bakery:build:production",
+            "firebaseProject": "bakery-eabce",
+            "firebaseHostingSite": "bakery-eabce"
+          }
         }
       }
     }

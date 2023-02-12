@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "bakery-eabce": {
+      "hosting": {
+        "bakery": [
+          "bakery-eabce"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "bakery-eabce"
+  }
+}
