@@ -4,6 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterModule } from './feature/footer/footer.module';
+import { HNavbarModule } from './feature/h-navbar/h-navbar.module';
+
 
 @NgModule({
   declarations: [
@@ -12,7 +15,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HNavbarModule,
+    FooterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
