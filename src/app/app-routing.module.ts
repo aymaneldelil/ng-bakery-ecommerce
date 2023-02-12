@@ -12,6 +12,16 @@ const routes: Routes = [
     loadChildren: () =>
       import('./view/public/auth/auth.module').then((t) => t.AuthModule),
   },
+  {
+    path: '403',
+    loadChildren: () =>
+      import('./view/public/page403/page403.module').then((t) => t.Page403Module),
+  },
+  {
+    path: '***',
+    loadChildren: () =>
+      import('./view/public/page404/page404.module').then((t) => t.Page404Module),
+  },
 
 ];
 
