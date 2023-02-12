@@ -47,12 +47,14 @@ body {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     // font-family: 'Yeseva One', cursive;  FOR TITLES
+
+    margin: 0;
+    padding: 0;
   }
 .container {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-
   @include mq.breakpoints(small) {
     width: 750px;
   }
