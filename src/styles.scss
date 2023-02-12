@@ -2,6 +2,9 @@
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @use '@angular/material' as mat;
+@use  './app/style/color' as colors;
+@use  './app/style/media-query' as mq;
+
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -35,5 +38,25 @@ $bakery-theme: mat.define-light-theme((
 
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { 
+  background-color: colors.$primary-lite;
+  margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  @include mq.breakpoints(small) {
+    width: 750px;
+  }
+
+  @include mq.breakpoints(medium) {
+    width: 970px;
+  }
+
+  @include mq.breakpoints(large) {
+    width: 1170px;
+  }
+
+}
