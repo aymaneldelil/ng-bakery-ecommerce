@@ -38,14 +38,15 @@ $bakery-theme: mat.define-light-theme((
 
 /* You can add global styles to this file, and also import other style files */
 
-
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Yeseva+One&display=swap');
 body { 
   background-color: colors.$primary-lite;
   margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
   *{
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    // font-family: 'Yeseva One', cursive;  FOR TITLES
   }
 .container {
   padding-left: 15px;
