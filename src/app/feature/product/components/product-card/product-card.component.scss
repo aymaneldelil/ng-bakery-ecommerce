@@ -11,12 +11,10 @@
     padding: 10px;
     @include mixins.display-flex;
     @include mixins.flex-direction(column);
-
     border-radius: 50% 50% 10px 10px;
     border: 6px dashed colors.$primary-lite;
     background:
         linear-gradient(0deg, rgba(250, 243, 227, 1) 0%, rgba(252, 225, 154, 1) 35%, rgba(214, 143, 64, 1) 100%) border-box;
-
 
     &:hover {
 
@@ -25,6 +23,7 @@
                 transform: rotate(20deg);
 
             }
+
             .img-shadow {
                 width: 100px;
             }
@@ -36,9 +35,12 @@
         @include mixins.flex-direction(column);
         @include mixins.align-items(center);
         max-height: 50%;
-        .img-product  , .img-shadow{
+
+        .img-product,
+        .img-shadow {
             transition: variables.$transition;
         }
+
         .img-product {
             width: 100px;
         }
@@ -47,4 +49,35 @@
             width: 0px;
         }
     }
-}
+
+    .details {
+
+
+        section {
+            @include mixins.display-flex;
+
+            .product-title {}
+
+            .product-details {
+                .category {}
+
+                div {
+                    .price {
+                        font-weight: 600;
+
+                    }
+
+                    .currency {
+                        font-size: small;
+                    }
+                }
+            }
+                .icons {
+                    @include mixins.display-flex;
+                    @include mixins.flex-direction(column);
+
+            
+                }
+            }
+        }
+    }
