@@ -42,6 +42,9 @@ body {
   background-color: colors.$primary-lite;
   margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+  *{
+    box-sizing: border-box;
+  }
 .container {
   padding-left: 15px;
   padding-right: 15px;
