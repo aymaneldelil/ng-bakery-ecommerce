@@ -35,7 +35,7 @@
         @include mixins.display-flex;
         @include mixins.flex-direction(column);
         @include mixins.align-items(center);
-        height: 50%;
+        max-height: 50%;
         .img-product  , .img-shadow{
             transition: variables.$transition;
         }
