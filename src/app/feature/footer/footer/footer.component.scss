@@ -1,6 +1,5 @@
-@use '../../../style/color' as colors;
-@use '../../../style/mixins' as mixins;
-@use '../../../style/variables' as variables;
+@use 'src/app/style/index' as * ;
+
 //---------------------------------------------------------------------------------------------------------------------------------------------
 
 footer {

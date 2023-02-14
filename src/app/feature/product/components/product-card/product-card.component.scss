@@ -1,7 +1,5 @@
-@use '../../../../style/color' as colors;
-@use '../../../../style/media-query' as mq;
-@use '../../../../style/mixins' as mixins;
-@use '../../../../style/variables' as variables;
+@use 'src/app/style/index' as * ;
+
 
 //---------------------------------------------------------------------------------------------------------------------------------------------
 .product-card {
@@ -9,10 +7,10 @@
     width: 200px;
     height: 250px;
     padding: 10px;
-    @include mixins.display-flex;
-    @include mixins.flex-direction(column);
+    @include display-flex;
+    @include flex-direction(column);
     border-radius: 50% 50% 10px 10px;
-    border: 6px dashed colors.$primary-lite;
+    border: 6px dashed $primary-lite;
     background:
         linear-gradient(0deg, rgba(250, 243, 227, 1) 0%, rgba(252, 225, 154, 1) 35%, rgba(214, 143, 64, 1) 100%) border-box;
 
@@ -31,14 +29,14 @@
     }
 
     .img {
-        @include mixins.display-flex;
-        @include mixins.flex-direction(column);
-        @include mixins.align-items(center);
+        @include display-flex;
+        @include flex-direction(column);
+        @include align-items(center);
         max-height: 50%;
 
         .img-product,
         .img-shadow {
-            transition: variables.$transition;
+            transition: $transition;
         }
 
         .img-product {
@@ -54,7 +52,7 @@
 
 
         section {
-            @include mixins.display-flex;
+            @include display-flex();
 
             .product-title {}
 
@@ -73,8 +71,8 @@
                 }
             }
                 .icons {
-                    @include mixins.display-flex;
-                    @include mixins.flex-direction(column);
+                    @include display-flex();
+                    @include flex-direction(column);
 
             
                 }

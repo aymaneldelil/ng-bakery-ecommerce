@@ -1,12 +1,9 @@
-@use '../../../style/color' as colors;
-@use '../../../style/mixins' as mixins;
-@use '../../../style/variables' as variables;
+@use 'src/app/style/index' as * ;
+
 //---------------------------------------------------------------------------------------------------------------------------------------------
 
 header {
-    background-color: colors.$secondary;
-
-
+    background-color: $secondary;
     flex: 0 0 80px;
     position: fixed;
     z-index: 11;
@@ -16,12 +13,12 @@ header {
 
     .container {
         .h-navbar {
-            @include mixins.display-flex();
-            @include mixins.justify-content(space-between);
+            @include display-flex();
+            @include justify-content(space-between);
 
             .logo {
                 img {
-                    width: calc(variables.$size *10);
+                    width: calc($size *10);
                 }
             }
         }
