@@ -1,17 +1,21 @@
-@use '../../../../style/color' as colors ;
-@use '../../../../style/media-query' as mq ;
-@use '../../../../style/variables' as variables ;
-@use '../../../../style/mixins' as mixins ;
-
+@use '../../../../style/index' as * ;
 //---------------------------------------------------------------------------------------------------------------------------------------------
 
 
-.home-page{
+.home-page {
 
-    .container{
+    .container {
 
-        header{
-            
+        header {
+
+            @include display-flex();
+
+            .header-image {
+                img {
+                    width: 500px;
+                }
+            }
+
         }
     }
 }
