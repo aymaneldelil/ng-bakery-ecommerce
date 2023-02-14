@@ -1,4 +1,4 @@
-@use '../../../../style/index' as * ;
+@use '../../../../style/index' as *;
 //---------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -9,11 +9,30 @@
         header {
 
             @include display-flex();
+            @include justify-content(center);
+
+            .header-title {
+                @include display-flex();
+                @include flex-direction(column);
+                @include justify-content(center);
+                h1 {
+                    font-family: 'Yeseva One', cursive;
+
+                 font-size: calc($size *7);
+                 color: $secondary-lite;
+                }
+
+                h2 {
+                    // font-family: 'Yeseva One', cursive;
+                    color: $primary-dark;
+
+                }
+            }
 
             .header-image {
-                img {
-                    width: 500px;
-                }
+               img{
+                width: 90%;
+               }
             }
 
         }

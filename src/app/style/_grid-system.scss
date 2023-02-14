@@ -2,6 +2,7 @@ $grid-columns: 12;
 
 @for $i from 1 through $grid-columns {
     .col-#{$i} {
-        width: percentage($i / $grid-columns)
+        width: percentage($i / $grid-columns);
+        // width:  math.div($i, $grid-columns)
     }
 }
