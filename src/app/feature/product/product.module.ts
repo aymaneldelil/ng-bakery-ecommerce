@@ -4,14 +4,16 @@ import { ProductCardComponent } from './components/product-card/product-card.com
 import { AngularMaterialModule } from '../angular-material/angular-material.module';
 import { ProductFilterComponent } from './components/product-filter/product-filter.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
-
+import { ProductService } from './services/product.service';
+import { FirestoreModule } from '@angular/fire/firestore';
 @NgModule({
   declarations: [
     ProductCardComponent,
     ProductFilterComponent,
     ProductDetailsComponent,
   ],
-  imports: [CommonModule, AngularMaterialModule],
+  imports: [CommonModule, AngularMaterialModule, FirestoreModule],
   exports: [ProductCardComponent],
+  providers: [ProductService],
 })
 export class ProductModule {}
