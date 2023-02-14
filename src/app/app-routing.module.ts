@@ -22,6 +22,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./view/public/page404/page404.module').then((t) => t.Page404Module),
   },
+  {
+    path: 'shop',
+    loadChildren: () =>
+      import('./view/public/shop/shop.module').then((t) => t.ShopModule),
+  },
 
 ];
 
